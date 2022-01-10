@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    
+    background-color:rgb(15, 15, 14);
+    display:grid;
+    /* height:700px; */
+    /* width: 900px; */
+    
+    /* how many rows and column u want in your grid with help of "grid-template" */
+
+    /* grid-template-columns: 133px 133px 133px  ;  
+    grid-template-rows: 133px 133px 133px ; */
+
+    /*(1fr = 1 fraction)*/
+    /* grid-template-rows: repeat(3 1fr);
+    grid-template-columns: repeat(3 1fr); */
+
+    grid-template-rows:100px 1fr 1fr;  /* you can adjust your perticaular rows as height an width */
+    grid-template-columns: 200px 1fr 1fr;
+
+    /* grid-row-gap and grid-column-gap spacifies to how many gap between two grid in form of rows and col*/
+
+    /* grid-column-gap:30px;
+    grid-row-gap:30px; */
+    
+    grid-gap:30px 30px;   /* shorthand properties of grid-gap */
+  
+}
+
+.grid-item {
+    /*  height :122px;
+    width: 122px; */
+    padding: 20px;
+    text-align: center;
+    font-size: 17px; 
+}
+
+.grid-color-1{
+    background-color : lightcoral;
+    border: 3px solid rgb(248, 96, 96);
+    grid-column-start: 1;     /*  You define where the item will start, and where the item will end*/
+    grid-column-end: 4;
+}
+
+.grid-color-2{
+    background-color : lightgreen;
+    border: 3px solid rgb(250, 6, 6);
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+.grid-color-3{
+    background-color : lightseagreen;
+    border: 3px solid rgb(250, 6, 6);
+    /* grid-column: 1 / span 2; */
+}
+
+.grid-color-4{
+    background-color : lightgoldenrodyellow;
+    border: 3px solid rgb(250, 6, 6);
+}
+
+.grid-color-5{
+    background-color : rgb(240, 243, 74);
+    border: 3px solid rgb(250, 6, 6);
+}
+
+.grid-color-6{
+    background-color : lightcoral;
+    border: 3px solid rgb(250, 6, 6);
+}
+
+.grid-color-7{
+    background-color : lightgreen;
+    border: 3px solid rgb(250, 6, 6);
+}
+
+.grid-color-8{
+    background-color : lightseagreen;
+    border: 3px solid rgb(250, 6, 6);
+    /* grid-row-start: 8;
+    grid-row-end: 11; */
+    grid-column: 1 / span 3;
+}    
